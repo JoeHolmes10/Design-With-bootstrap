@@ -1,0 +1,235 @@
+:root {
+    --headerColor: #19283f;
+    --greenColor: #33d1cc;
+    --yellowColor: #ffc400;
+    --redColor: #ff3150;
+    --sectionColor: #eff7fa;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: var(--headerColor);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--greenColor);
+}
+
+.search svg {
+    color: var(--greenColor);
+}
+.search {
+    border-left: solid 1px var(--greenColor);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.landing {
+    background-color: var(--headerColor);
+    height: calc(100vh - 56px);
+}
+
+.btn-main {
+    background-color: var(--redColor);
+    color: var(--yellowColor);
+}
+.btn-main:hover {
+    color: white;
+}
+
+.mainTitle::after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--greenColor);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.feat .iconsHolder {
+    height: 200px;
+}
+
+.feat .iconsHolder svg {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX;
+    -moz-transform: translateX;
+    -ms-transform: translateX;
+    -o-transform: translateX;
+}
+
+.iconsHolder .number {
+    font-size: 12rem;
+    color: var(--sectionColor);
+}
+
+.iconsHolder .icon {
+    color: var(--greenColor);
+}
+
+.feat h4 {
+    color: var(--yellowColor);
+}
+
+.ourWork {
+    background-color: var(--sectionColor);
+}
+
+.ourWork ul .active {
+    background-color: var(--redColor);
+    color: var(--yellowColor);
+}
+
+.ourWork ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.ourWork ul li:not(.active):hover {
+    color: var(--yellowColor);
+}
+
+.ourWork .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.ourWork .box::before {
+    content: attr(data-work);
+    position: absolute;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color:rgb(51, 209, 204, 75%);
+    font-size:1.5rem;
+    transform: translateX(calc(-100% - 5px));
+    -webkit-transform: translateX(calc(-100% - 5px));
+    -moz-transform: translateX(calc(-100% - 5px));
+    -ms-transform: translateX(calc(-100% - 5px));
+    -o-transform: translateX(calc(-100% - 5px));
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.ourWork .box:hover::before {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.ourTeam {
+    background-color: var(--sectionColor);
+}
+.ourTeam h2 {
+    color: var(--yellowColor);
+}
+
+.ourTeam h4 {
+    background-color: var(--greenColor);
+}
+
+.project {
+    background-color: var(--headerColor);
+}
+
+.Subscribe {
+    background-color: var(--yellowColor);
+}
+.Subscribe input[type="Text"] {
+    border: none;
+    border-bottom: 2px solid white ;
+}
+.Subscribe input[type="submit"] {
+    background-color: var(--headerColor);
+    color: var(--yellowColor);
+}
+.Subscribe input[type="Text"]:focus {
+    outline: none;
+}
+
+.Subscribe input[type="Text"]::placeholder {
+    color: white;
+}
+
+.footer {
+    background-color: var(--headerColor);
+}
+
+.footer .copyright span {
+    color: var(--greenColor);
+}
+.footer .copyright div span {
+    color: var(--yellowColor);
+}
+
+.fa-facebook-f {
+    background-color: #1877f2;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.fa-instagram{
+    background-color: white;
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    /* -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.fa-twitter  {
+    background-color: #1da1f2;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.fa-github{
+    background-color: #333;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
